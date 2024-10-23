@@ -105,6 +105,7 @@ a {
   justify-content: center;
   max-width: 1140px;
   padding: 20px;
+  background-color: #212121;
 }
 
 .event-card {
