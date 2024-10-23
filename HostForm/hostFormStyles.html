@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neighbourhood Tech</title>
+    <link rel="stylesheet" href="hostFormStyles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="navbar">
+          <div class="logo">
+            <img src="media/NT logo In Circle.png" alt="Logo" />
+          </div>
+          <nav class="nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="host.html">Host</a></li>
+              <li><a href="attend.html">Attend</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Consider inserting "upload image", if time permits -->
+
+      <div class="title-container">
+        <h1>Host Information Registration Form</h1>
+      </div>
+
+      <div class="form-container">
+        <form id="registrationForm">
+          <div class="form-row">
+            <label for="name">Event Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter event name"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="organizer">Organizer:</label>
+            <input
+              type="text"
+              id="organizer"
+              name="organizer"
+              placeholder="Enter organizer name"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="location">Location:</label>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              placeholder="Enter location"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <div class="form-row">
+            <label for="cost">Cost:</label>
+            <input
+              type="number"
+              id="cost"
+              name="cost"
+              placeholder="Enter event cost"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="contactinfo">Contact Info:</label>
+            <input
+              type="text"
+              id="contactinfo"
+              name="contactinfo"
+              placeholder="Enter contact information"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="description">Description (Optional):</label>
+            <input
+              type="text"
+              id="description"
+              name="description"
+              placeholder="Enter description"
+            />
+          </div>
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+
+      <p id="formMessage"></p>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

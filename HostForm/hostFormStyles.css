@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: rgb(244, 244, 244);
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-color: rgb(251, 251, 251);
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  max-height: 75px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links ul li {
+  margin-left: 30px;
+}
+
+.nav-links ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  color: #3d77c2;
+}
+
+.form-container {
+  margin: 30px 0;
+  border: 1px solid #ccc;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+}
+
+.title-container {
+  margin: 30px 0;
+  border: 1px solid #ccc;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 600px;
+}
+
+label {
+  background-color: rgb(13, 153, 255);
+  color: white;
+  padding: 7px;
+  width: 200px;
+  text-align: right;
+  margin-right: 10px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+input,
+textarea,
+select,
+button {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+  width: 800px;
+  background-color: rgb(189, 227, 255);
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+  }
+
+  .nav-links ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  label {
+    padding: 10px;
+    text-align: left;
+    margin-right: 0;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  textarea {
+    width: 100%;
+  }
+}
