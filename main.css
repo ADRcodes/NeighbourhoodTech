@@ -1,0 +1,168 @@
+/* :root {
+  --primary-color: #f29898;
+  --secondary-color: #f2c7b2;
+  --tertiary-color: #f2e2b2;
+} */
+
+
+/* ----- Global styles ----- */
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  color: #212121;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #528af2;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* ----- Home page ----- */
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background-color: #f29898;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  max-width: 1140px;
+  background-color: beige;
+}
+
+.hero-text {
+  padding: 20px;
+}
+
+.hero-text h1 {
+  max-width: 500px;
+}
+
+.hero-text p {
+  margin-top: 16px;
+}
+
+.btn-group {
+  padding-top: 32px;
+}
+
+.hero-img {
+  margin: 0;
+}
+
+.events-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b2f2e2;
+  padding: 32px;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow: hidden;
+  justify-content: center;
+  max-width: 1140px;
+  padding: 20px;
+}
+
+.event-card {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  box-sizing: border-box;
+  width: 300px;
+  min-width: 300px;
+  height: 420px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* Make all direct children except for the first of the above element have padding */
+.event-card > *:not(:first-child) {
+  padding: 4px 16px;
+}
+
+.event-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 8px;
+  border-radius: 8px 8px 0 0;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  background-color: rgb(127, 223, 255);
+  border: 1px solid black;
+  border-radius: 50%;
+}
+/* To make the elements overlap */
+.icons .icon:not(:first-child) {
+  margin-left: -25px;
+}
+/* To make it look like the item to the left is on top, flex gives the later elements a higher z-index */
+.icon:first-child {
+  z-index: 4;
+}
+.icon:nth-child(2) {
+  z-index: 3;
+}
+.icon:nth-child(3) {
+  z-index: 2;
+}
