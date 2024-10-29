@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neighbourhood Tech</title>
-    <link rel="stylesheet" href="hostFormStyles.css" />
+    <link rel="stylesheet" href="attendeeFormStyles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -21,7 +21,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="hostFormStyles.html">Host</a></li>
-          <li><a href="attendeeForm.html">Attend</a></li>
+          <li><a href="attend.html">Attend</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -33,56 +33,34 @@
 
       <div class="form-container">
         <div class="form-title-bar">
-          <h2>Host Registration Form</h2>
+          <h2>Attendee Registration Form</h2>
         </div>
         <form id="registrationForm">
           <div class="form-row">
-            <label for="name">Event Name:</label>
+            <label for="name">Name:</label>
             <input
               type="text"
               id="name"
               name="name"
-              placeholder="Enter event name"
+              placeholder="Enter your name"
               required
             />
           </div>
 
           <div class="form-row">
-            <label for="organizer">Organizer:</label>
-            <input
-              type="text"
-              id="organizer"
-              name="organizer"
-              placeholder="Enter organizer name"
-              required
-            />
-          </div>
-
-          <div class="form-row">
-            <label for="location">Location:</label>
+            <label for="location">Desired Event:</label>
             <input
               type="text"
               id="location"
               name="location"
-              placeholder="Enter location"
+              placeholder="Specify your desired event"
               required
             />
           </div>
 
           <div class="form-row">
-            <label for="date">Date:</label>
+            <label for="date">Date of birth:</label>
             <input type="date" id="date" name="date" required />
-          </div>
-
-          <div class="form-row">
-            <label for="cost">Cost:</label>
-            <input
-              type="number"
-              id="cost"
-              name="cost"
-              placeholder="Enter event cost"
-              required
-            />
           </div>
 
           <div class="form-row">
@@ -96,23 +74,13 @@
             />
           </div>
 
-          <div class="form-row">
-            <label for="description">Description (Optional):</label>
-            <input
-              type="text"
-              id="description"
-              name="description"
-              placeholder="Enter description"
-            />
-          </div>
-
           <button type="submit">Register</button>
 
           <div id="errorContainer"></div>
         </form>
 
         <div class="form-bottom-bar">
-          <p>Event submission approval may take 1-2 business days.</p>
+          <p>Admission approval is contingent upon available venue capacity.</p>
         </div>
       </div>
 
@@ -137,7 +105,7 @@
           <i class="fab fa-linkedin-in"></i>
         </a>
       </div>
-      <h3>Neighbourhood Tech</h3>
+      <h3>Neighborhood Tech</h3>
 
       <ul>
         <li><a href="index.html">Home</a></li>
