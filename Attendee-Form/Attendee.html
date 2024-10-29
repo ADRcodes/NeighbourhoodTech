@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendee Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./Styles/Attendee.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+  </head>
+  <body>
+    <!-- The Nav section -->
+
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="./images/NT logo In Circle.png" alt="Logo" />
+        </div>
+        <nav class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="host.html">Host</a></li>
+            <li><a href="attend.html">Attend</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="registration-form">
+      <div class="form-header">
+        <h1>Attendee Registration Form</h1>
+      </div>
+      <br />
+      <form id="eventForm">
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-field">
+          <label for="event">Desired Event:</label>
+          <input
+            type="text"
+            id="event"
+            name="event"
+            placeholder="Specify your desired event"
+          />
+        </div>
+        <div class="form-field">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" placeholder="yyyy-mm-dd" />
+        </div>
+        <div class="form-field">
+          <label for="contact">Contact Info:</label>
+          <input
+            type="text"
+            id="contact"
+            name="contact"
+            placeholder="Enter email or phone #"
+          />
+        </div>
+        <button type="submit" class="submit-button">Register For Event</button>
+      </form>
+
+      <!-- Approval message inside the form container -->
+      <div class="approval-message">
+        Your spot will be confirmed based on availability.
+      </div>
+    </section>
+
+    <!-- Display Registered Attendees -->
+    <section class="registration-list">
+      <h2>Registered Attendees</h2>
+      <div id="registration-list"></div>
+    </section>
+
+    <!-- The Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section follow-us">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <p>
+            Email:
+            <a href="mailto:info@neighbourhoodtech.com" class="email-link"
+              >info@neighbourhoodtech.com</a
+            >
+          </p>
+          <p>
+            Phone:
+            <a href="tel:+1709122122" class="phone-link">+1 709-122-122</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Neighbourhood Tech | All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="./Attendee.js"></script>
+  </body>
+</html>
