@@ -272,11 +272,14 @@ button:hover {
 }
 
 footer {
-  background-color: #f4f4f4;
-  padding: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-container {
+  padding-top: 20px;
+  background-color: white;
+  min-width: 1300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
