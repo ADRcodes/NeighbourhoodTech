@@ -20,8 +20,10 @@ document
     const contactInfoRegex =
       /^[\w\.\-]+@[a-zA-Z0-9]+?\.[a-zA-Z]{2,3}$|^\(?[\d]{3}\)?-?[\d]{3}-?[\d]{4}$|\d{10}$/;
 
+    // Initialize error array
     let errors = [];
 
+    // Add error messages to the array if problems are detected
     if (!name || !nameRegex.test(name)) {
       errors.push("Please enter a valid event name.");
     }
@@ -48,11 +50,13 @@ document
       );
     }
 
+    // If there are errors, they are shown, and execution is halted
     if (errors.length > 0) {
       displayMessage(errors.join("\n"), "error");
       return;
     }
 
+    // Constructs an object for form data
     const formData = {
       name,
       organizer,
@@ -66,10 +70,12 @@ document
     handleFormSubmission(formData);
   });
 
+// Process the form data, after it has been validated
 function handleFormSubmission(data) {
   console.log("Form Data:", data);
   displayMessage("Registration successful!", "success");
 
+  // Retrieve/add to existing attendees from local store/initializes new array
   let events = JSON.parse(localStorage.getItem("events")) || [];
 
   events.unshift(data);
@@ -79,6 +85,7 @@ function handleFormSubmission(data) {
   console.log(events);
 }
 
+// Displays success or error message to the user
 function displayMessage(messages, type) {
   const messageElement = document.getElementById("errorContainer");
 
