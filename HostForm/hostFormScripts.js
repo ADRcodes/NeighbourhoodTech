@@ -14,6 +14,7 @@ document
     const contactInfo = document.getElementById("contactInfo").value.trim();
     const description = document.getElementById("description").value.trim();
 
+    // Input validation with flexible regex.
     const nameRegex = /^[a-zA-Z0-9\s]+$/;
     const organizerRegex = /^[a-zA-Z\s]+$/;
     const contactInfoRegex =

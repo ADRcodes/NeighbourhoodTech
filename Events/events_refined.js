@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const storedEvents = JSON.parse(localStorage.getItem('events')) || [];
 
     if (storedEvents.length > 0) {
-        const dynamicEventsContainer = document.getElementById('dynamicEvents');
+        const dynamicEventsContainer = document.querySelector('.event-container');
+        // const dynamicEventsContainer = document.getElementById('dynamicEvents');
 
         //Gets each event//
         storedEvents.forEach(event => {
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <img src="${imagePath}" alt="${event.title || 'Event Image'}" width="200px" height="200px">
                     </div>
                     <div class="eventtxtbox">
-                        <h2>${event.name || 'Event Title'}</h2>
+                        <h3>${event.name || 'Event Title'}</h3>
                         <p>Date: ${event.date || 'N/A'}</p>
                         <p>Location: ${event.location || 'N/A'}</p>
                         <br />
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         </a>
                     </div>
                     <div class="eventdescbox">
-                        <h2>Description</h2>
+                        <h3>Description</h3>
                         <p>${event.description || 'No description provided'}</p>
                     </div>
                 `;
