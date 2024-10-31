@@ -1,3 +1,8 @@
+<!-- Group 5 - Noah Hickey, Alex Russell, Alexander Barry, Abdul Zahiri | SD12 -->
+<!-- Mid-Term Sprint | Neighbourhood Tech-->
+<!-- Start Date: Oct. 20th, 2024 | End Date: Nov. 1st, 2024 🎃-->
+<!-- Description: The project is a web application for a fictional company called Neighbourhood Tech. The application is a platform for tech enthusiasts, professionals, and organizations in Newfoundland to connect, share knowledge, and promote local tech events. The application allows users to view upcoming events, register to attend events, and host events. The project is built using HTML, CSS, and JavaScript. -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,8 +60,6 @@
         <div class="hero-img-container hero-img4">
           <img class="hero-img" src="./assets/AlexGS.png" alt="Neighborhood Tech Hero" />
         </div>
-
-
       </div>
     </div>
   </section>
@@ -80,7 +83,101 @@
       </div>
     </div>
   </section>
+
   <section class="events-section">
+    <h2>Upcoming Events</h2>
+
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+      <button class="carousel-arrow left-arrow" onclick="scrollCarousel('left')">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="carousel">
+        <div class="carousel-item">
+          <a href="#">
+            <img src="./assets/1.jpg" alt="Event 1" />
+            <div class="carousel-content">
+              <p>MON, OCT 21 - 4:30 AM NDT</p>
+              <h3>Building Cool Websites</h3>
+              <p>Devs Anonymous</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="">
+            <img src="./assets/2.jpg" alt="Event 1" />
+            <div class="carousel-content">
+              <p>TUE, OCT 25 - 9:30 AM NDT</p>
+              <h3>Learning the Real Backend 2: The Sequel</h3>
+              <p>Devs Anonymous</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="">
+            <img src="./assets/3.jpg" alt="Event 1" />
+            <div class="carousel-content">
+              <p>WED, OCT 26 - 6:30 PM NDT</p>
+              <h3>Devs Unite</h3>
+              <p>Mysa</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="">
+            <img src="./assets/4.jpg" alt="Event 1" />
+            <div class="carousel-content">
+              <p>TUE, OCT 27 - 7:30 PM NDT</p>
+              <h3>Tech Talks</h3>
+              <p>New Founders</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="">
+            <img src="./assets/5.jpg" alt="Event 1" />
+            <div class="carousel-content">
+              <p>FRI, OCT 28 - 8:30 PM NDT</p>
+              <h3>Hackathon</h3>
+              <p>Devs Anonymous</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="">
+            <img src="./assets/6.jpg" alt="Event 1" />
+            <div class="carousel-content">
+              <p>MON, NOV 28 - 2:30 PM NDT</p>
+              <h3>Digital Offshore Conference</h3>
+              <p>Devs Anonymous</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="">
+            <img src="./assets/7.jpg" alt="Event 1" />
+            <div class="carousel-content">
+              <p>WED, NOV 26 - 10:30 AM NDT</p>
+              <h3>Embracing Excellence: Talent • Technology</h3>
+              <p>CME MEC</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <button class="carousel-arrow right-arrow" onclick="scrollCarousel('right')">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+  <!-- <section class="events-section">
     <h2>Upcoming Events</h2>
     <div class="events-container">
       <a href="/events.html" class="event-card event-card-1">
@@ -148,7 +245,7 @@
       </a>
 
     </div>
-  </section>
+  </section> -->
   <section class="about-section">
     <div class="about-container">
       <div class="about-content">
@@ -165,42 +262,44 @@
     </div>
   </section>
 
-</body>
-<footer>
-  <div class="footer-container">
-    <div class="social-icons">
-      <a href="https://www.facebook.com" target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.twitter.com" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://www.instagram.com" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.linkedin.com" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </div>
-    <h3>Neighborhood Tech</h3>
 
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="./Events/events.html">Events</a></li>
-      <li><a href="./HostForm/hostFormStyles.html">Host</a></li>
-      <li><a href="./AttendeeForm/attendeeForm.html">Attend</a></li>
-    </ul>
-    <div class="contact-info">
-      <p>
-        <a href="mailto:info@neighbourhoodtech.com" class="email-link">info@neighbourhoodtech.com</a>
-      </p>
-      |
-      <p>
-        <a href="tel:+1709122122" class="phone-link">+1 709-122-122</a>
-      </p>
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <h3>Neighborhood Tech</h3>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./Events/events.html">Events</a></li>
+        <li><a href="./HostForm/hostFormStyles.html">Host</a></li>
+        <li><a href="./AttendeeForm/attendeeForm.html">Attend</a></li>
+      </ul>
+      <div class="contact-info">
+        <p>
+          <a href="mailto:info@neighbourhoodtech.com" class="email-link">info@neighbourhoodtech.com</a>
+        </p>
+        |
+        <p>
+          <a href="tel:+1709122122" class="phone-link">+1 709-122-122</a>
+        </p>
+      </div>
+      <p>&copy; 2024 Neighbourhood Tech | All Rights Reserved</p>
     </div>
-    <p>&copy; 2024 Neighbourhood Tech | All Rights Reserved</p>
-  </div>
-</footer>
+  </footer>
+  <script src="carousal.js"></script>
+</body>
 
 </html>
