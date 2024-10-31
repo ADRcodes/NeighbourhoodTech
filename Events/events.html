@@ -1,135 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeighbourhoodTech Events</title>
-    <link rel= "stylesheet" href="events.css"> 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeighbourhoodTech Events</title>
   <link rel="stylesheet" href="../main.css">
-  <script src ="events_refined.js"></script>
-</head> 
+  <link rel="stylesheet" href="events.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="events_refined.js"></script>
+</head>
 
 <header class="navbar">
   <div class="nav-brand">
-    <img class="nav-logo" src="https://picsum.photos/50" alt="Logo" />
+    <img class="nav-logo" src="../HostForm/media/NT logo In Circle.png" alt="Logo" />
     <h1 class="nav-title">Neighborhood Tech</h1>
   </div>
   <nav class="nav-links">
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="host.html">Host</a></li>
-      <li><a href="attend.html">Attend</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="../HostForm/hostFormStyles.html">Host</a></li>
+      <li><a href="../AttendeeForm/attendeeForm.html">Attend</a></li>
     </ul>
   </nav>
 </header>
 
 <body>
+  <div class="event-container">
     <div class="eventcontentbox">
-        <div class="eventpicbox">
-        <img src= "./eventpictures/discussion.jpg" alt= "TechEvent1" width= "200px" height="200px">
-        </div>
-        <div class="eventtxtbox">
-            <h3>Security Job Offer</h3>                
-            <p>Date: Nov. 5th,2024 | 4:00PM</p>
-            <p>Location: St. John's Convention Center</p>
-  
-        <a href="attend.html" target="_blank">
-        <button class="event_button">Register Now!
-        </button>
-        </a>
-        </div>
-        <div class="eventdescbox"> 
-            <h3>
-                Description
-            </h3>
-            <p>
-                Octo-Tech Security has job offers that may interest you. Attend to learn about how we do security for the 21st century!
-            </p>
-        </div>
-    </div>
-  
+      <div class="eventpicbox">
+        <img src="./eventpictures/discussion.jpg" alt="TechEvent1" width="200px" height="200px">
+      </div>
+      <div class="eventtxtbox">
+        <h3>Security Job Offer</h3>
+        <p>Date: Nov. 5th,2024 | 4:00PM</p>
+        <p>Location: St. John's Convention Center</p>
 
-    <div class="eventcontentbox">
-        <div class="eventpicbox">
-        <img src= "./eventpictures/alex_intelligence.jpg" alt= "TechEvent2" width= "200px" height="200px">
-        </div>
-        <div class="eventtxtbox">
-            <h3>AI Recruitment</h3>
-            <p>Date: Nov 7th, 2024 | 12:00PM</p>
-            <p>Location: Memorial University</p>
-            
-          <a href="attend.html" target="_blank">
+        <a href="attend.html" target="_blank">
           <button class="event_button">Register Now!
           </button>
-          </a>
-          </div>
-        <div class="eventdescbox">
-            <h3>
-                Description
-            </h3>
-            <p>
-                Alex Ingtelligence is on the cutting edge of artificial intelligence! To learn more about our startup and our ambitious goals, register now!
-            </p>
-        </div>
-    </div>
-  </div>
-
-    <div class="eventcontentbox">
-        <div class="eventpicbox">
-        <img src= "./eventpictures/robotics_team.jpg" alt= "TechEvent3" width= "200px" height="200px">
-        </div>
-        <div class="eventtxtbox">
-            <h3>Robotics Q&A</h3>
-            <p>Date: Nov 20th, 2024 | 10:30AM</p>
-            <p>Location: Keyin College</p>
-            
-            <a href="attend.html" target="_blank">
-            <button class="event_button">Register Now!
-            </button>
-            </a>
-            </div>
-        <div class="eventdescbox">
-            <h3>
-                Description
-            </h3>
-            <p>
-            Constellation Robotics are passionate about robotics. Feel free to attend our presentation, whether you're a novice or master!
-            </p>
-        </div>
-    </div>
-  
-    <div class="eventcontentbox">
-        <div class="eventpicbox">
-        <img src= "./eventpictures/marketingpic.jpg" alt= "TechEvent4" width= "200px" height="200px">
-        </div>
-        <div class="eventtxtbox">
-            <h3>Data in this Era</h3>
-            <p>Date: Dec 3rd, 2024 | 11:00AM</p>
-            <p>Location: Co. Innovation Centre</p>
-           
-        <a href="attend.html" target="_blank">
-        <button class="event_button">Register Now!
-        </button>
         </a>
-        </div>
-        <div class="eventdescbox">
-            <h3>
-                Description
-            </h3>
-            <p>
-                Data analysis is more important than ever! Join us as we discuss the growing field of data science. We look forward to seeing you!
-            </p>
-        </div>
+      </div>
+      <div class="eventdescbox">
+        <h3>
+          Description
+        </h3>
+        <p>
+          Octo-Tech Security has job offers that may interest you. Attend to learn about how we do security for the 21st
+          century!
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div id="dynamicEvents"></div>
-  
+
+    <div class="eventcontentbox">
+      <div class="eventpicbox">
+        <img src="./eventpictures/alex_intelligence.jpg" alt="TechEvent2" width="200px" height="200px">
+      </div>
+      <div class="eventtxtbox">
+        <h3>AI Recruitment</h3>
+        <p>Date: Nov 7th, 2024 | 12:00PM</p>
+        <p>Location: Memorial University</p>
+
+        <a href="attend.html" target="_blank">
+          <button class="event_button">Register Now!
+          </button>
+        </a>
+      </div>
+      <div class="eventdescbox">
+        <h3>
+          Description
+        </h3>
+        <p>
+          Alex Ingtelligence is on the cutting edge of artificial intelligence! To learn more about our startup and our
+          ambitious goals, register now!
+        </p>
+      </div>
+    </div>
+
+
+    <div class="eventcontentbox">
+      <div class="eventpicbox">
+        <img src="./eventpictures/robotics_team.jpg" alt="TechEvent3" width="200px" height="200px">
+      </div>
+      <div class="eventtxtbox">
+        <h3>Robotics Q&A</h3>
+        <p>Date: Nov 20th, 2024 | 10:30AM</p>
+        <p>Location: Keyin College</p>
+
+        <a href="attend.html" target="_blank">
+          <button class="event_button">Register Now!
+          </button>
+        </a>
+      </div>
+      <div class="eventdescbox">
+        <h3>
+          Description
+        </h3>
+        <p>
+          Constellation Robotics are passionate about robotics. Feel free to attend our presentation, whether you're a
+          novice or master!
+        </p>
+      </div>
+    </div>
+
+    <div class="eventcontentbox">
+      <div class="eventpicbox">
+        <img src="./eventpictures/marketingpic.jpg" alt="TechEvent4" width="200px" height="200px">
+      </div>
+      <div class="eventtxtbox">
+        <h3>Data in this Era</h3>
+        <p>Date: Dec 3rd, 2024 | 11:00AM</p>
+        <p>Location: Co. Innovation Centre</p>
+
+        <a href="attend.html" target="_blank">
+          <button class="event_button">Register Now!
+          </button>
+        </a>
+      </div>
+      <div class="eventdescbox">
+        <h3>
+          Description
+        </h3>
+        <p>
+          Data analysis is more important than ever! Join us as we discuss the growing field of data science. We look
+          forward to seeing you!
+        </p>
+      </div>
+    </div>
+
+    <div id="dynamicEvents"></div>
+  </div>
+  </div>
   <footer>
     <div class="footer-container">
       <div class="social-icons">
@@ -147,13 +150,12 @@
         </a>
       </div>
       <h3>Neighborhood Tech</h3>
-  
+
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="host.html">Host</a></li>
-        <li><a href="attend.html">Attend</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="../HostForm/hostFormStyles.html">Host</a></li>
+        <li><a href="../AttendeeForm/attendeeForm.html">Attend</a></li>
       </ul>
       <div class="contact-info">
         <p>
@@ -168,4 +170,5 @@
     </div>
   </footer>
 </body>
+
 </html>

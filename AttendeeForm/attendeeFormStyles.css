@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,19 +31,18 @@ p {
 a {
   text-decoration: none;
   color: #212121;
-}
+} */
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1300px;
+  /* max-width: 1300px; */
   margin: 0 auto;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   padding: 5px;
   padding-bottom: 20px;
-  background-color: rgb(244, 244, 244);
   background-image: url(media/tile.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,12 +51,12 @@ a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header {
+/* header {
   background-color: #f4f4f4;
   padding: 10px 0;
-}
+} */
 
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,13 +91,13 @@ nav ul li {
 
 .nav-links ul li a:hover {
   color: #3d77c2;
-}
+} */
 
 .form-container {
   width: 900px;
   margin: 30px 0;
   border-radius: 20px;
-  background-color: rgb(236, 236, 236);
+  background-color: white;
 
   display: flex;
   justify-content: center;
@@ -110,17 +109,22 @@ nav ul li {
 .form-title-bar {
   text-align: center;
   background-color: #3f72ff;
-  color: white;
-  padding: 10px;
-  font-size: 1.2em;
   margin-bottom: 30px;
+}
+
+.form-title-bar h2 {
+  color: white;
+  padding: 16px;
 }
 
 .form-bottom-bar {
   text-align: center;
   background-color: #3f72ff;
-  color: white;
   padding: 10px;
+}
+
+.form-bottom-bar p {
+  color: white;
   font-size: 0.9em;
 }
 
@@ -147,7 +151,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   width: 100%;
   max-width: 600px;
 }
@@ -168,7 +172,7 @@ input,
 textarea,
 select,
 button {
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -204,7 +208,7 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  .navbar {
+  /* .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -216,7 +220,7 @@ button:hover {
   .nav-links ul li {
     margin-left: 0;
     margin-bottom: 10px;
-  }
+  } */
 
   .form-row {
     flex-direction: column;
@@ -279,7 +283,7 @@ button:hover {
   margin-bottom: 10px;
 }
 
-footer {
+/* footer {
   display: flex;
   justify-content: center;
 }
@@ -356,4 +360,4 @@ footer {
 
 .contact-info p {
   transition: all 0.3s ease;
-}
+} */
