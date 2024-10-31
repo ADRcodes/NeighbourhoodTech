@@ -1,7 +1,10 @@
+// Event listener for handling form submission
 document
   .getElementById("registrationForm")
   .addEventListener("submit", function (e) {
     e.preventDefault();
+
+    // Retrieval of inputs and trimming extra space
 
     const name = document.getElementById("name").value.trim();
     const organizer = document.getElementById("organizer").value.trim();
