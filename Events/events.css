@@ -10,64 +10,92 @@
   }
   
   .mainbox {
-    width: 1006px;
-    height: 1500px; /* will be removed / adjusted once page is complete */
+    width: 900px;
     background-color: white;
     border: 3px solid gray;
     margin: 20px;
-    text-align: left;
+    text-align: center;
   }
 
   .eventcontentbox{
-    background-color: rgb(90, 161, 204);
-    width: 1000px;
+    background-color: #3F72FF;
+    width: 48%; 
+    margin-left: 350px; 
     height: 250px;
     display: flex;
-    /*flex-direction: column;*/
     padding: 20px;
+    margin-top: 30px;
     justify-content: center;
     border-radius:25px;
-    margin-bottom: 20px;
-    margin-left: 200px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+    margin-bottom: 0px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
   }
 
   .eventcontentbox:hover{
-    box-shadow: 0 0 20px rgb(2, 71, 114);
+    box-shadow: 0 0 20px #3FD2FF;
   }
 
   .eventpicbox{
-    width: 300px;
-    height: 200px;
+    width: 225px;
+    height: 225px;
+    border-radius: 25px;
+  }
+
+  .eventpicbox img {
+    border-radius: 25px 0 0 25px; 
   }
 
   .eventtxtbox{
-    background-color:lightgray;
-    width: 500px;
+    background-color: white;
+    width: 250px;
     height: 200px;
     padding-top: 10px;
     padding-left:10px;
+    padding-right:10px;
+    flex-direction: column;
+    align-items: center; 
+    font-size: 2px;
+  }
+
+  .eventtxtbox p{
+    font-size: 14px;
+  }
+
+  .eventdescbox{
+    background-color: white;
+    width: 250px;
+    height: 200px;
+    padding-top: 10px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 0 25px 25px 0;
+    font-size: 2px;
+  }
+
+  .eventdescbox p{
+    font-size: 14px;
   }
 
   .event_button{
-    background-color: rgb(90, 161, 204);
+    background-color: #3FD2FF;
     color: rgb(0,0,0);
     width: 180px;
     height: 60px;
-    display:inline-block;
+    display:grid;
+    grid-template-rows: auto auto auto 1 fr auto;
     cursor:pointer;
     text-align:center;
     font-size: 26px;
-    margin: 4px 2px;
     border-radius: 15px;
     transition: background-color 0.3s ease;
+    margin: 10px 0;
+    padding: 10px;  
   }
 
   .event_button:hover{
-    color: rgb(2, 71, 114);
+    color: white;
     box-shadow: 0 0 20px rgb(2, 71, 114);
-
+    transition: background-color 0.3s ease;
   }
-
-
  

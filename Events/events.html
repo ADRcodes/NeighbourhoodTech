@@ -8,9 +8,8 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-  <link rel="stylesheet" href="./footer.css" />
-
   <link rel="stylesheet" href="../main.css">
+  <script src ="events_refined.js"></script>
 </head> 
 
 <header class="navbar">
@@ -32,143 +31,141 @@
 <body>
     <div class="eventcontentbox">
         <div class="eventpicbox">
-        <img src= "./discussion.jpg" alt= "TechEvent1" width= "300px" height="200px">
+        <img src= "./eventpictures/discussion.jpg" alt= "TechEvent1" width= "200px" height="200px">
         </div>
         <div class="eventtxtbox">
-            <h2>Octo-Tech Security</h2>
+            <h3>Security Job Offer</h3>                
             <p>Date: Nov. 5th,2024 | 4:00PM</p>
             <p>Location: St. John's Convention Center</p>
-            <br />
+  
         <a href="attend.html" target="_blank">
         <button class="event_button">Register Now!
         </button>
         </a>
         </div>
-        <div class="eventtxtbox"> 
-            <h2>
+        <div class="eventdescbox"> 
+            <h3>
                 Description
-            </h2>
+            </h3>
             <p>
-                Octo-Tech Security has a variety of options for customers to up their security. We have job offers that may interest you. Attend to learn about how we do security for the 21st century!
+                Octo-Tech Security has job offers that may interest you. Attend to learn about how we do security for the 21st century!
             </p>
         </div>
     </div>
+  
 
     <div class="eventcontentbox">
         <div class="eventpicbox">
-        <img src= "./alex_intelligence.jpg" alt= "TechEvent2" width= "300px" height="200px">
+        <img src= "./eventpictures/alex_intelligence.jpg" alt= "TechEvent2" width= "200px" height="200px">
         </div>
         <div class="eventtxtbox">
-            <h2>Alex Intelligence Recruitment</h2>
+            <h3>AI Recruitment</h3>
             <p>Date: Nov 7th, 2024 | 12:00PM</p>
             <p>Location: Memorial University</p>
-            <br />
-        <a href="attend.html" target="_blank">
-        <button class="event_button">Register Now!
-        </button>
-        </a>
-        </div>
-        <div class="eventtxtbox">
-            <h2>
+            
+          <a href="attend.html" target="_blank">
+          <button class="event_button">Register Now!
+          </button>
+          </a>
+          </div>
+        <div class="eventdescbox">
+            <h3>
                 Description
-            </h2>
+            </h3>
             <p>
-                Alex Ingtelligence is on the cutting edge of artificial intelligence and we wish to share our passion with you! To learn more about our startup and our ambitious goals, register now!
+                Alex Ingtelligence is on the cutting edge of artificial intelligence! To learn more about our startup and our ambitious goals, register now!
             </p>
         </div>
     </div>
+  </div>
 
     <div class="eventcontentbox">
         <div class="eventpicbox">
-        <img src= "./robotics_team.jpg" alt= "TechEvent3" width= "300px" height="200px">
+        <img src= "./eventpictures/robotics_team.jpg" alt= "TechEvent3" width= "200px" height="200px">
         </div>
         <div class="eventtxtbox">
-            <h2>The Future of Constellation Robotics</h2>
+            <h3>Robotics Q&A</h3>
             <p>Date: Nov 20th, 2024 | 10:30AM</p>
-            <p>Location: Keyin College, Topsail Road</p>
-            <br />
-        <a href="attend.html" target="_blank">
-        <button class="event_button">Register Now!
-        </button>
-        </a>
-        </div>
-        <div class="eventtxtbox">
-            <h2>
+            <p>Location: Keyin College</p>
+            
+            <a href="attend.html" target="_blank">
+            <button class="event_button">Register Now!
+            </button>
+            </a>
+            </div>
+        <div class="eventdescbox">
+            <h3>
                 Description
-            </h2>
+            </h3>
             <p>
-            Our team is passionate about robotics and how it will revolutionize the landscape of the tech industry. Feel free to attend our presentation, whether you're a novice or master at robotic programming!
+            Constellation Robotics are passionate about robotics. Feel free to attend our presentation, whether you're a novice or master!
             </p>
         </div>
     </div>
-
+  
     <div class="eventcontentbox">
         <div class="eventpicbox">
-        <img src= "./marketingpic.jpg" alt= "TechEvent4" width= "300px" height="200px">
+        <img src= "./eventpictures/marketingpic.jpg" alt= "TechEvent4" width= "200px" height="200px">
         </div>
         <div class="eventtxtbox">
-            <h2>Golden Core Analytics</h2>
+            <h3>Data in this Era</h3>
             <p>Date: Dec 3rd, 2024 | 11:00AM</p>
             <p>Location: Co. Innovation Centre</p>
-            <br />
+           
         <a href="attend.html" target="_blank">
         <button class="event_button">Register Now!
         </button>
         </a>
         </div>
-        <div class="eventtxtbox">
-            <h2>
+        <div class="eventdescbox">
+            <h3>
                 Description
-            </h2>
+            </h3>
             <p>
-                Data analysis is more important than ever! Join us as we discuss the growing field of data science and how vital it is; no matter your industry. We look forward to seeing you!
+                Data analysis is more important than ever! Join us as we discuss the growing field of data science. We look forward to seeing you!
             </p>
         </div>
     </div>
+  </div>
 
+  <div id="dynamicEvents"></div>
+  
   <footer>
     <div class="footer-container">
-      <div class="footer-section about">
-        <h3>About Us</h3>
-        <ul>
-          <li><a href="#">Our Mission</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
       </div>
-      <div class="footer-section follow-us">
-        <h3>Follow Us</h3>
-        <div class="social-icons">
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.twitter.com" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.instagram.com" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
+      <h3>Neighborhood Tech</h3>
+  
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="host.html">Host</a></li>
+        <li><a href="attend.html">Attend</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="contact-info">
         <p>
-          Email:
-          <a href="mailto:info@neighbourhoodtech.com" class="email-link"
-            >info@neighbourhoodtech.com</a
-          >
+          <a href="mailto:info@neighbourhoodtech.com" class="email-link">info@neighbourhoodtech.com</a>
         </p>
+        |
         <p>
-          Phone:
           <a href="tel:+1709122122" class="phone-link">+1 709-122-122</a>
         </p>
       </div>
-    </div>
-    <div class="footer-bottom">
       <p>&copy; 2024 Neighbourhood Tech | All Rights Reserved</p>
     </div>
   </footer>
-    
 </body>
 </html>
