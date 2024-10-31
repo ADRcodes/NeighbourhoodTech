@@ -1,51 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("registrationForm");
-  const errorContainer = document.getElementById("errorContainer");
-  const formMessage = document.getElementById("formMessage");
+document
+  .getElementById("registrationForm")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  const attendeeData = JSON.parse(localStorage.getItem("attendeeData")) || [];
-  console.log("Loaded attendee data from localStorage:", attendeeData);
+    const name = document.getElementById("name").value.trim();
+    const location = document.getElementById("location").value.trim();
+    const date = document.getElementById("date").value;
+    const contactInfo = document.getElementById("contactInfo").value.trim();
 
-  function displayError(message) {
-    errorContainer.textContent = message;
-    errorContainer.style.color = "red";
-  }
-
-  function saveAttendeeData(data) {
-    console.log("Saving new attendee data:", data);
-    attendeeData.push(data);
-    localStorage.setItem("attendeeData", JSON.stringify(attendeeData));
-  }
-
-  function handleAttendeeSubmission(event) {
-    event.preventDefault();
-
-    const name = form.name.value.trim();
-    const location = form.location.value.trim();
-    const date = form.date.value;
-    const contactInfo = form.contactInfo.value.trim();
     const contactInfoRegex =
       /^[\w\.\-]+@[a-zA-Z0-9]+?\.[a-zA-Z]{2,3}$|^\(?[\d]{3}\)?-?[\d]{3}-?[\d]{4}$|\d{10}$/;
 
-    if (!name || !location || !date || !contactInfo) {
-      displayError("All fields are required.");
-      return;
-    }
-
     let errors = [];
 
-    if (!name || !nameRegex.test(name)) {
-      errors.push("Please enter a valid name.");
-    }
-
-    if (!location) {
-      errors.push("Please enter your desired event.");
-    }
-
-    if (!date) {
-      errors.push("Please select a valid date of birth.");
-    }
-
+    if (!name) errors.push("Please enter your name.");
+    if (!location) errors.push("Please enter your location.");
+    if (!date) errors.push("Please enter a valid date.");
     if (!contactInfo || !contactInfoRegex.test(contactInfo)) {
       errors.push(
         "Please enter valid contact information (email or 10-digit phone number)."
@@ -57,24 +27,20 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    const attendee = {
-      name,
-      desiredEvent: location,
-      dob: date,
-      contactInfo,
-    };
+    const formData = { name, location, date, contactInfo };
+    handleFormSubmission(formData);
+  });
 
-    console.log("Attendee data:", attendee);
+function handleFormSubmission(data) {
+  console.log("Attendee Data:", data);
+  displayMessage("Registration successful!", "success");
 
-    saveAttendeeData(attendee);
-    console.log("Updated attendeeData after submission:", attendeeData);
-    formMessage.textContent = "Registration successful!";
-    formMessage.style.color = "green";
-    form.reset();
-  }
+  let attendees = JSON.parse(localStorage.getItem("attendees")) || [];
+  attendees.unshift(data);
+  localStorage.setItem("attendees", JSON.stringify(attendees));
 
-  form.addEventListener("submit", handleAttendeeSubmission);
-});
+  console.log("Updated attendee data:", attendees);
+}
 
 function displayMessage(messages, type) {
   const messageElement = document.getElementById("errorContainer");
@@ -91,7 +57,9 @@ function displayMessage(messages, type) {
         </ul>
       </div>
     `;
+    messageElement.style.color = "red";
   } else {
     messageElement.innerHTML = `<p class="success-message">${messages}</p>`;
+    messageElement.style.color = "green";
   }
 }

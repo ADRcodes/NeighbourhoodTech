@@ -242,6 +242,7 @@ button:hover {
 
 #errorContainer {
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -254,6 +255,7 @@ button:hover {
   background-color: #ffe6e6;
   color: red;
   text-align: left;
+  border-radius: 10px;
 }
 
 .error-box h3 {
@@ -267,8 +269,14 @@ button:hover {
 }
 
 .success-message {
+  border: 2px solid green;
+  background-color: rgb(222, 247, 222);
   color: green;
   font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 footer {
